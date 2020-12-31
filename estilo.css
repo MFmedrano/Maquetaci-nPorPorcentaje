@@ -52,7 +52,7 @@ aside {
 }
 
 #articles article {
-    width: 30%;
+    width: 25%;
     height: 150px;
     background: green;
     color: white;
@@ -68,4 +68,44 @@ aside {
 footer {
     text-align: center;
     background-color: thistle;
+}
+
+
+/*Responsive*/
+
+
+/*Desde 0 hasta 888 de anchura,aplicarás estos estilos.*/
+
+@media (max-width:888px) {
+    #container {
+        overflow: hidden;
+        /*Todo lo que sobresalga,se oculte*/
+    }
+    aside {
+        float: none;
+        min-height: auto;
+        line-height: 20px;
+        width: 100%;
+        padding: 19px;
+    }
+    #articles article {
+        width: 96%;
+        background: red;
+    }
+    #articles {
+        width: 100%;
+    }
+}
+
+@media (max-width:600px) and (max-height:600px) {
+    #articles article {
+        width: 90%;
+        background: blue;
+    }
+}
+
+@media (max-width:554px) {
+    body {
+        background-color: salmon;
+    }
 }
